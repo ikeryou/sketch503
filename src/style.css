@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1;
+}
+
+html, body {
+  background-color: #000;
+}
+
+.js-tgSVG {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  z-index: 9999;
+}
+
+.s-gpu {
+  will-change: transform;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  
+}
+
+.l-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max(100vh, 100lvh);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.l-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.l-item {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  font-size: 1.25px;
+  /* text-align: center; */
+
+  text-shadow: 0px 0px 20px #FFF;
+  
+
+  & rt {
+    /* text-align: center; */
+    /* font-size: 10px; */
+    font-size: 1.1em;
+    color: inherit;
+  }
+}
+
+
+
+
+.l-debug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #FFF;
+  font-size: 12px;
+  display: none;
+}
+.l-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 40px;
+  color: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9999;
+}
+.l-info p {
+  font-size: 14px;
+  color: inherit;
+  background-color: #000;
+  padding: 5px 20px 5px 20px;
+}
+.l-info a {
+  color: inherit;
+  text-decoration: line-through;
+}
+.l-info a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+  .l-info {
+    justify-content: flex-start;
+    margin: 20px;
+    height: auto;
+  }
+  .l-info p {
+    font-size: 10px;
+  }
+
+  .l-item {
+    text-shadow: none;
+    & rt {
+      font-size: 1.2em;
+    }
+  }
+}
